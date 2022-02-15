@@ -20,7 +20,6 @@ class UserController {
     try {
       await hubspotClient.cms.hubdb.rowsApi.createTableRow(tableIdOrName, HubDbTableRowV3Request)
       const apiResponse = await hubspotClient.cms.hubdb.tablesApi.publishDraftTable(tableIdOrName)
-      // console.log(JSON.stringify(apiResponse.body, null, 2))
       return res.status(200).json({
         error: false,
         message
@@ -64,7 +63,6 @@ class UserController {
     try {
       await hubspotClient.cms.hubdb.rowsApi.purgeDraftTableRow('developer_test_6', rowId)
       const apiResponse = await hubspotClient.cms.hubdb.tablesApi.publishDraftTable('developer_test_6')
-      //console.log(JSON.stringify(apiResponse.body, null, 2))
       return res.status(200).json({
         error: false,
         message
@@ -97,7 +95,6 @@ class UserController {
      try {
        await hubspotClient.cms.hubdb.rowsApi.updateDraftTableRow(tableIdOrName, rowId, HubDbTableRowV3Request)
        const apiResponse = await hubspotClient.cms.hubdb.tablesApi.publishDraftTable(tableIdOrName)
-       //console.log(JSON.stringify(apiResponse.body, null, 2))
        return res.status(200).json({
          error: false,
          message
