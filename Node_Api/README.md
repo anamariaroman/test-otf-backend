@@ -14,7 +14,7 @@ simple front end allowing a user to update and view the database.
 
 .    Go to the `Node_Api` Folder
 
-.    Execute npm install for install the libraries
+.    Execute `npm install` for install the libraries
 
 .    Run the command `node src/server.js`
 
