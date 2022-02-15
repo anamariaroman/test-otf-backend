@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link href="https://bootswatch.com/5/quartz/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/64f103116d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TestOtfBackend</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container p-16">
+            <div class="row">
+                <div class="row mt-4">
+                <div class="col-md-4 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="saveChanges">
+                                <div class="form-group p-2">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="register_name">
+                                </div>
+                                <div class="form-group p-2">
+                                    <label for="last_name">Last_Name</label>
+                                    <input type="text" class="form-control" id="register_last_name">
+                                </div>
+                                <div class="form-group p-2">
+                                    <label for="document_id">Document_ID</label>
+                                    <input type="text" class="form-control" id="register_document_id">
+                                </div>
+                                <div class="form-group p-2">
+                                    <button class="btn btn-success btn-block mx-auto" id="bottomSave">SAVE</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-user col-md-4 mx-auto">
+            <div class="row mt-4"></div>
+            <form id="showChanges"></form>
+        </div>
+        <script src="./config.js"></script>
+    </body>
+</html>
