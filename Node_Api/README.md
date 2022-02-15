@@ -22,7 +22,8 @@ simple front end allowing a user to update and view the database.
 
 .    In the browser, fill in the requested fields and press the button `save` to complete the record
 
-.    Proof endpoints with the extension in Visual Studio Code `THUNDER CLIENT` or install `Postman` in your computer 🕹️
+.    Proof endpoints with the extension in Visual Studio Code `THUNDER CLIENT` or install `Postman` in your computer,
+get information here https://developers.hubspot.com/docs/api/cms/hubdb 🕹️
 
         GET http://localhost:5000/user
         POST http://localhost:5000/user
